@@ -1,0 +1,33 @@
+.jb-reduced-in-form{
+  width: 50%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:black;
+
+}
+.little_img{
+  width:50px;
+  height:50px;
+}
+.well-specific{
+  margin-top: 2%;
+}
+
+
+.normal-font p{
+  font-family:sans-serif !important;
+}
+.panel{
+  width:50%:
+}
+/*  Added some tab*/
+.marginated-to-right{
+  margin-left: 30%;
+  background-color: black;
+}
+
+#scroll-div{
+  overflow: auto;
+  height: 300px;
+}
