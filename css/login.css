@@ -3,9 +3,69 @@
   margin-top: 50% auto;
   margin-left: auto;
   margin-right: auto;
-  background-color: black;
+  background-color: #red;
   border: 1px solid black;
 }
+.jb-margin-top{
+  margin-top:50% auto;
+}
 .form-reduced{
-  margin: 2% auto;
+  margin: 50% auto;
+}
+
+
+.container {
+
+
+  width: 500px;
+
+
+}
+
+.form-control {
+
+  background-color: #fbfbfb;
+  border: 1px solid #e6e6e6;
+
+}
+.jumbotron {
+
+  background-color: #ffffff;
+
+  -webkit-box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.75);
+ position: relative;
+ top: 100px;
+ left: 3%;
+}
+
+.logo {
+position: absolute;
+top: 40px;
+left: 45%;
+
+
+}
+
+
+.signup {
+
+
+}
+
+
+* {
+
+
+}
+
+
+
+.lala {
+
+
+  position: absolute;
+  left: 35%;
+  background-color: #ffffff;
 }

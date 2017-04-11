@@ -43,14 +43,21 @@ class Wall extends CI_Controller{
     unset($_SESSION['comment_user']);
     redirect(wall);
   }
-  //This function deletes the comment and all the responses associated to it
-  function delete($commentId=0){
-    if($commentId == 0){
+  //Esta funcion borra los anuncios seleccionados.
+  function delete($idAnuncio=0){
+    if($idAnuncio == 0){
       redirect('wall');
     }
+    //Aqui se declara una instancia de Codeigniter y despues se procede a borrar el anuncio.
     $CI =& get_instance();
-    $CI->db->delete('respondcommentary',array('idCommentary' => $commentId));
-    $CI->db->delete('commentary', array('id' => $commentId));
+    $CI->db->delete('anuncios', array('id' => $idAnuncio));
+    $sql = "select * from anuncios where id =?";
+
+  $rs =   $CI->db->query($sql, array($idAnuncio));
+  $rs = $rs->result();
+  $rs = $rs[0];
+  $fullPath = $_SERVER['DOCUMENT_ROOT']."/admin/images/".$rs->imagen;
+    unlink($url);
     redirect('wall');
   }
 //This function edits the current comment

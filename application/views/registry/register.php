@@ -32,9 +32,11 @@ else{
 
 }
  ?>
-
-
-<div class="jumbotron jb-reduced">
+<style media="screen">
+{background-color: {#f7f7f7;}
+</style>
+<img src="logo.png" alt="">
+<div class="jumbotron jb-reduced lala">
   <div class="row">
     <div class="col-sm-12">
         <legend><h2>Registrese en el sitio</h2></legend>

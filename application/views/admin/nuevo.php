@@ -4,7 +4,7 @@
 
       <center> <h1> Nuevo Usuario </h1> </center>
 
-        <form name="nuevo_usuario" method="POST" action="<?php echo base_url('agregarAdminis/modificarusuario')?>">
+        <form name="nuevo_usuario" method="POST" action="<?php echo base_url('agregarAdminis/nuevoregistros')?>">
 
           <table width="50%">
             <tr>

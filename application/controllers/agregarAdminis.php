@@ -16,12 +16,8 @@ class agregarAdminis extends CI_Controller{
     $this->load->view('templates/top');
     $this->load->view('admin/agregarAdministradores');
     $this->load->view('templates/footer');
-
-
-
-
-
   }
+
   function usuarionuevo (){
     $this->load-> view('templates/top');
 $this->load-> view('admin/nuevo');
@@ -48,11 +44,41 @@ $this->load->view('admin/guardausuario');
       $this->load->view('templates/footer');
   }
 
-
+//esta funcion elimina el usuario
 function eliminarusuario(){
   $this->load-> view('templates/top');
 $this->load->view('admin/eliminar');
     $this->load->view('templates/footer');
 
 }
+function vistas(){
+  $this->load-> view('templates/top');
+$this->load->view('admin/anuncios');
+    $this->load->view('templates/footer');
+
+
+}
+//Conseguir anuncios por categoria
+function anunciosByCategoria($id =0){
+  if($id == 0){
+    redirect("agregarAdminis");
+  }
+  $d  = array();
+  $d['id'] = $id;
+  $this->load-> view('templates/top');
+$this->load->view('admin/anunciosporCategoria',$d);
+    $this->load->view('templates/footer');
+}
+//Muestra las vista de categoria
+function categoria(){
+  $this->load-> view('templates/top');
+  $this->load->view('admin/categorias');
+    $this->load->view('templates/footer');
+
+
+
+}
+
+
+
 }

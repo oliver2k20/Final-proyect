@@ -1,7 +1,7 @@
 <?php
 
 require('conexion.php');
-var_dump($_POST);
+
 $resultado = "";
 if($_POST){
 $usuario=$_POST['usuario'];
@@ -35,6 +35,8 @@ $resultado=$mysqli->query($query);
 <?php }else {?>
   <H1> Error al guardar Usuario </h1>
     <?php } ?>
+
+
 
     <p></p>
 
